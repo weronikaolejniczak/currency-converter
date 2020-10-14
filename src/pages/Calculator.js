@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {Button, Select} from '../components';
+import {Button, Select, Input} from '../components';
 
 const Calculator = () => {
     const [amount, setAmount] = useState(0);
@@ -35,11 +35,7 @@ const Calculator = () => {
     return (
         <form onSubmit={handleSubmit}>
             <div>
-                <input
-                    type="number"
-                    placeholder="Amount"
-                    onChange={(event) => setAmount(event.target.value)}
-                />
+                <Input setValue={setAmount} />
             </div>
             <div>
                 <span className="label">From:</span>
