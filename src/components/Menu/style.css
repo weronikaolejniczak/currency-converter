@@ -1,0 +1,13 @@
+.menu {
+    display: flex;
+    list-style: none;
+}
+
+.page-link-bullet {
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
