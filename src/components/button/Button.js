@@ -1,15 +1,20 @@
 import React from 'react';
 import './style.css';
 
-const Button = ({color, children}) => { // function Button(props) {
+const Button = ({type, children}) => { // function Button(props) {
     // const { color } = props;
     return (
-    <button className="button">{children}</button>
+        <button
+            className="button"
+            type={type}
+        >
+            {children}
+        </button>
     );
 }
 
 Button.defaultProps = {
-    label: 'Enter label for button'
+    type: 'submit'
 }
 
 export default Button;
