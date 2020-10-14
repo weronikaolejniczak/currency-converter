@@ -3,7 +3,7 @@
     list-style: none;
 }
 
-.page-link-bullet {
+.menu-link-bullet {
     font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
@@ -11,3 +11,7 @@
     padding-right: 10px;
 }
 
+.menu-link {
+    color: #3366ff;
+    text-decoration: none;
+}

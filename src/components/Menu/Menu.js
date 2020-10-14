@@ -7,10 +7,13 @@ const Menu = ({pages}) => {
         <ul className="menu">
             {pages.map((page) => (
                 <li
-                    className="page-link-bullet"
+                    className="menu-link-bullet"
                     key={`page-${page.title}`}
                     >
-                    <Link to={page.path}>{page.title}</Link>
+                    <Link
+                        className="menu-link"
+                        to={page.path}
+                        >{page.title}</Link>
                 </li>
             ))}
         </ul>
