@@ -21,7 +21,7 @@ function App() {
           <Route path="/" exact>
             <Calculator />
           </Route>
-          <Route path="/about">
+          <Route path="/about/:id">
             <About />
           </Route>
           <Route path="/contact">
