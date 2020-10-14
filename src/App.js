@@ -6,7 +6,9 @@ function App() {
   return (
     <div className="App">
       <h1>Currency Converter</h1>
-      <Button label="Click me!" />
+      <Button color="blue">Click me!</Button>
+      <Button>Don't click me!</Button>
+      <Button>Third button</Button>
     </div>
   );
 }
