@@ -1,0 +1,11 @@
+.button {
+    padding: 15px 22px;
+    border-radius: 22px;
+    background-color: rgb(141, 187, 34);
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
