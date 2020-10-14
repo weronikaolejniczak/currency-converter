@@ -1,27 +1,28 @@
 import React from 'react';
-import {BrowserRouter as Router, Switch, Link, Route} from 'react-router-dom';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import {Menu} from './components';
 import Calculator from './pages/Calculator';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import './App.css';
 
 function App() {
+  let pages = [
+    {title: 'Home', path: '/'},
+    {title: 'About', path: '/about'},
+    {title: 'Contact', path: '/contact'}
+  ];
+
   return (
     <div className="App">
       <Router>
-        <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
-        </ul>
+        <Menu pages={pages} />
 
         <Switch>
-          {/* <Route path="/" component={Calculator} />
-          for class component (works for functional as well though) */}
           <Route path="/" exact>
             <Calculator />
           </Route>
-          <Route path="/about/:id">
+          <Route path="/about">
             <About />
           </Route>
           <Route path="/contact">
