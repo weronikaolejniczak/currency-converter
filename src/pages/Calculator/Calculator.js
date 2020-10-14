@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
-import {Button, Select, Input} from '../components';
+import {Button, Select, Input} from '../../components';
+import './style.css';
 
 const Calculator = () => {
     const [amount, setAmount] = useState(0);
@@ -35,7 +36,7 @@ const Calculator = () => {
     return (
         <div className="App-Calculator">
             <form onSubmit={handleSubmit}>
-                <div>
+                <div className="">
                     <Input setValue={setAmount} />
                 </div>
                 <div>

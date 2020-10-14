@@ -1,9 +1,9 @@
 import React from 'react';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import {Header} from './components';
-import Calculator from './pages/Calculator';
-import About from './pages/About';
-import Contact from './pages/Contact';
+import Calculator from './pages/Calculator/Calculator';
+import About from './pages/About/About';
+import Contact from './pages/Contact/Contact';
 import './App.css';
 
 function App() {
