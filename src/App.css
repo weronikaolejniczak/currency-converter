@@ -3,4 +3,5 @@
   background-color: #1a1a1a;
   color: #ffffff;
   height: 100vh;
+  clip-path: polygon(0% 0%, 0% 90%, 50% 99%, 100% 90%, 100% 0%);
 }
