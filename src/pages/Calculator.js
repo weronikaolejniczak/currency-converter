@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {Button, Select} from '../';
+import {Button, Select} from '../components';
 
 const Calculator = () => {
     const [amount, setAmount] = useState(0);
