@@ -1,6 +1,6 @@
 import React from 'react';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-import {Menu} from './components';
+import {Header} from './components';
 import Calculator from './pages/Calculator';
 import About from './pages/About';
 import Contact from './pages/Contact';
@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Menu pages={pages} />
+        <Header pages={pages} />
 
         <Switch>
           <Route path="/" exact>
