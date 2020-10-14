@@ -33,25 +33,27 @@ const Calculator = () => {
     }
 
     return (
-        <form onSubmit={handleSubmit}>
-            <div>
-                <Input setValue={setAmount} />
-            </div>
-            <div>
-                <span className="label">From:</span>
-                <Select value={currencyFrom} setCurrency={setCurrencyFrom} currencies={currencies} />
-            </div>
-            <div>
-                <span className="label">To:</span>
-                <Select value={currencyTo} setCurrency={setCurrencyTo} currencies={currencies} />
-            </div>
-            <div>
-                <span className="result">Result: {result.toFixed(2)}</span>
-            </div>
-            <div>
-                <Button>Send</Button>
-            </div>
-        </form>
+        <div className="App-Calculator">
+            <form onSubmit={handleSubmit}>
+                <div>
+                    <Input setValue={setAmount} />
+                </div>
+                <div>
+                    <span className="label">From:</span>
+                    <Select value={currencyFrom} setCurrency={setCurrencyFrom} currencies={currencies} />
+                </div>
+                <div>
+                    <span className="label">To:</span>
+                    <Select value={currencyTo} setCurrency={setCurrencyTo} currencies={currencies} />
+                </div>
+                <div>
+                    <span className="result">Result: {result.toFixed(2)}</span>
+                </div>
+                <div>
+                    <Button>Send</Button>
+                </div>
+            </form>
+        </div>
     );
 }
 
