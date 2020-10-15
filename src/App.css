@@ -5,3 +5,8 @@
   height: 100vh;
   clip-path: polygon(0% 0%, 0% 90%, 50% 97%, 100% 90%, 100% 0%);
 }
+
+.App a {
+  color: rgb(141, 187, 34);
+  text-decoration: none;
+}
