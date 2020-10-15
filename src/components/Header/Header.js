@@ -6,7 +6,10 @@ const Header = ({pages}) => {
     return (
         <header className="App-header">
             {/* uppercase, one part green, other not, different sizes, baseline */}
-            <h2>Currency converter</h2>
+            <h2 className="logo">
+                <span className="logo-part-one">Currency</span>
+                <span className="logo-part-two">converter</span>
+            </h2>
             <Menu pages={pages} />
         </header>
     );

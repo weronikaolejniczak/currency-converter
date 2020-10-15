@@ -5,3 +5,11 @@
     padding-left: 35px;
     padding-right: 35px;
 }
+
+.App-header .logo {
+    letter-spacing: -0.05em;
+}
+
+.App-header .logo-part-one {
+    color: rgb(141, 187, 34);
+}
