@@ -14,7 +14,7 @@ const Input = ({type, placeholder, setValue}) => {
 
 Input.defaultProps = {
     type: 'number',
-    placeholder: 'Amount'
+    placeholder: ''
 }
 
 export default Input;

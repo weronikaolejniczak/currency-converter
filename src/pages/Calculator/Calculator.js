@@ -36,22 +36,33 @@ const Calculator = () => {
     return (
         <div className="App-Calculator">
             <form onSubmit={handleSubmit}>
-                <div className="">
+                <div className="currency-selectors">
+                    <div className="currency-selector-one">
+                        <span className="label">From:</span>
+                        <Select value={currencyFrom} setCurrency={setCurrencyFrom} currencies={currencies} />
+                    </div>
+                    <div className="currency-selector-two">
+                        <span className="label">To:</span>
+                        <Select value={currencyTo} setCurrency={setCurrencyTo} currencies={currencies} />
+                    </div>
+                </div>
+
+                <div className="input-container">
+                    <span className="input-label">Amount</span>
                     <Input setValue={setAmount} />
                 </div>
-                <div>
-                    <span className="label">From:</span>
-                    <Select value={currencyFrom} setCurrency={setCurrencyFrom} currencies={currencies} />
-                </div>
-                <div>
-                    <span className="label">To:</span>
-                    <Select value={currencyTo} setCurrency={setCurrencyTo} currencies={currencies} />
-                </div>
-                <div>
-                    <span className="result">Result: {result.toFixed(2)}</span>
-                </div>
-                <div>
-                    <Button>Send</Button>
+
+                <div className="action-and-result-container">
+                    <div className="button-container">
+                        <Button>Send</Button>
+                    </div>
+
+                    <div className="result-container">
+                        <span className="result-tag">Result</span>
+                        <div className="result-amount-container">
+                            <span className="result-amount">{result.toFixed(2)}</span>
+                        </div>
+                    </div>
                 </div>
             </form>
         </div>

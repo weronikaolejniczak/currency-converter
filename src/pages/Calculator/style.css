@@ -5,3 +5,67 @@
     height: calc(100vh - 200px);
     padding: 50px;
 }
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container .input-label {
+    position: relative;
+    left: -27vw;
+    top: 20px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgb(141, 187, 34);
+}
+
+.currency-selectors {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.currency-selector-two {
+    margin-left: 20px;
+}
+
+.action-and-result-container {
+    display: flex;
+    align-items: normal;
+    justify-content: center;
+}
+
+.result-tag {
+    left: -2.3vw;
+    top: -50px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgb(141, 187, 34);
+}
+
+.result-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.result-amount-container {
+    width: 200px;
+    margin: 16px;
+    padding: 23px;
+    border: 2px solid rgb(141, 187, 34);
+    border-radius: 2.5em;
+}
+
+.result-amount-container .result-amount {
+    font-size: 20px;
+}
+
+.button-container {
+
+}
