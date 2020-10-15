@@ -3,7 +3,7 @@
   background-color: #1a1a1a;
   color: #ffffff;
   height: 100vh;
-  clip-path: polygon(0% 0%, 0% 90%, 50% 97%, 100% 90%, 100% 0%);
+  clip-path: polygon(0% 0%, 0% 85%, 50% 92%, 100% 85%, 100% 0%);
 }
 
 .App a {
