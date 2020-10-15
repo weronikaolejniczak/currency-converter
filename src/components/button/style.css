@@ -1,9 +1,9 @@
 .button {
-    margin: 5px;
-    padding: 25px 60px;
+    margin: 1.5em;
+    padding: 1.2em 2.5em;
     border-radius: 3em;
     background-color: rgb(141, 187, 34);
-    font-size: 20px;
+    font-size: 16px;
     text-transform: uppercase;
     color: #ffffff;
     outline: none;

@@ -35,36 +35,34 @@ const Calculator = () => {
 
     return (
         <div className="App-Calculator">
-            <form onSubmit={handleSubmit}>
-                <div className="currency-selectors">
-                    <div className="currency-selector-one">
-                        <span className="label">From:</span>
-                        <Select value={currencyFrom} setCurrency={setCurrencyFrom} currencies={currencies} />
+            <div className="calculator-container">
+                <form onSubmit={handleSubmit}>
+                    <div className="currency-selectors">
+                        <div>
+                            <span className="label">From</span>
+                            <Select value={currencyFrom} setCurrency={setCurrencyFrom} currencies={currencies} />
+                        </div>
+                        <div className="currency-two">
+                            <span className="label">To</span>
+                            <Select value={currencyTo} setCurrency={setCurrencyTo} currencies={currencies} />
+                        </div>
                     </div>
-                    <div className="currency-selector-two">
-                        <span className="label">To:</span>
-                        <Select value={currencyTo} setCurrency={setCurrencyTo} currencies={currencies} />
+
+                    <div className="input-container">
+                        <span className="label">Amount</span>
+                        <Input setValue={setAmount} />
                     </div>
-                </div>
 
-                <div className="input-container">
-                    <span className="input-label">Amount</span>
-                    <Input setValue={setAmount} />
-                </div>
-
-                <div className="action-and-result-container">
                     <div className="button-container">
                         <Button>Calculate</Button>
                     </div>
 
                     <div className="result-container">
-                        <span className="result-tag">Result</span>
-                        <div className="result-amount-container">
-                            <span className="result-amount">{result.toFixed(2)}</span>
-                        </div>
+                        <span className="label">Result</span>
+                        <span className="result-amount">{result.toFixed(2)}</span>
                     </div>
-                </div>
-            </form>
+                </form>
+            </div>
         </div>
     );
 }

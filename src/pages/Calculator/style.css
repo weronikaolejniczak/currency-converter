@@ -3,7 +3,12 @@
     justify-content: center;
     align-items: center;
     height: calc(100vh - 200px);
-    padding: 50px;
+}
+
+.calculator-container {
+    background-color: #222222;
+    padding: 5em;
+    border-radius: 1em;
 }
 
 .input-container {
@@ -11,11 +16,7 @@
     flex-direction: column;
 }
 
-.input-container .input-label {
-    position: relative;
-    left: -27vw;
-    top: 20px;
-    font-size: 18px;
+.label {
     letter-spacing: 2px;
     text-transform: uppercase;
     color: rgb(141, 187, 34);
@@ -25,47 +26,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px;
+    margin-bottom: 1.5em;
 }
 
-.currency-selector-two {
-    margin-left: 20px;
-}
-
-.action-and-result-container {
-    display: flex;
-    align-items: normal;
-    justify-content: center;
-}
-
-.result-tag {
-    left: -2.3vw;
-    top: -50px;
-    font-size: 18px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: rgb(141, 187, 34);
+.currency-selectors .currency-two {
+    margin-left: 1em;
 }
 
 .result-container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-}
-
-.result-amount-container {
-    width: 200px;
-    margin: 16px;
-    padding: 23px;
-    border: 2px solid rgb(141, 187, 34);
+    padding: 1.5em;
     border-radius: 2.5em;
+    border: 2px solid rgb(141, 187, 34);
 }
 
-.result-amount-container .result-amount {
+.result-container .result-amount {
     font-size: 20px;
-}
-
-.button-container {
-
+    margin-left: 0.5em;
 }
