@@ -1,4 +1,5 @@
 import React from 'react';
+import {CodePen, GitHub, LinkedIn} from '../../assets';
 import './style.css';
 
 const About = () => {
@@ -7,6 +8,12 @@ const About = () => {
             <section className="about-container">
                 <h2>About page</h2>
                 <p>Hi! My name is <b>Weronika</b> and I'm a front end developer.</p>
+
+                <div className="social-media-links">
+                    <img src={CodePen} alt="CodePen Logo" />
+                    <img src={GitHub} alt="GitHub Logo" />
+                    <img src={LinkedIn} alt="LinkedIn Logo" />
+                </div>
 
                 <p>This is a <b>React</b> project with styling in <b>CSS</b>, <b>API data fetching</b> and simple page routing with <b>React Router</b>.</p>
 

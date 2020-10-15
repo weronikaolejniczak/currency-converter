@@ -14,3 +14,13 @@
     border-radius: 1em;
     background-color: #222222;
 }
+
+.about-container .social-media-links {
+
+}
+
+.about-container .social-media-links img {
+    width: 50px;
+    height: 50px;
+    margin: 0.5em;
+}
