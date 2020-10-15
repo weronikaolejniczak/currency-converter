@@ -54,7 +54,7 @@ const Calculator = () => {
 
                 <div className="action-and-result-container">
                     <div className="button-container">
-                        <Button>Send</Button>
+                        <Button>Calculate</Button>
                     </div>
 
                     <div className="result-container">
